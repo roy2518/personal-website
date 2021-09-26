@@ -7,7 +7,7 @@ import { Page } from 'utils/types';
 const Projects = (): JSX.Element => (
   <div>
     <Header page={Page.Projects} />
-    <h2>Projects coming soon!:)</h2>
+    <h2>Projects coming soon!!! :)</h2>
   </div>
 );
 

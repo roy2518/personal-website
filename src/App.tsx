@@ -11,13 +11,13 @@ function App(): JSX.Element {
   return (
     <Router>
       <Switch>
-        <Route path="/projects">
+        <Route path={`${process.env.PUBLIC_URL}/projects`}>
           <Projects />
         </Route>
-        <Route path="/blog">
+        <Route path={`${process.env.PUBLIC_URL}/blog`}>
           <Blog />
         </Route>
-        <Route path="/">
+        <Route path={`${process.env.PUBLIC_URL}/`}>
           <Home />
         </Route>
       </Switch>

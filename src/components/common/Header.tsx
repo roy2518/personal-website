@@ -13,13 +13,13 @@ const Header = ({ page }: HeaderProps): JSX.Element => (
   <div className="header">
     <ul>
       <li>
-        <Link className={page === Page.Home ? 'active' : ''} to="/">Home</Link>
+        <Link className={page === Page.Home ? 'active' : ''} to={`${process.env.PUBLIC_URL}/`}>Home</Link>
       </li>
       <li>
-        <Link className={page === Page.Projects ? 'active' : ''} to="/projects"> Projects </Link>
+        <Link className={page === Page.Projects ? 'active' : ''} to={`${process.env.PUBLIC_URL}/projects`}> Projects </Link>
       </li>
       <li>
-        <Link className={page === Page.Blog ? 'active' : ''} to="/blog"> Blog </Link>
+        <Link className={page === Page.Blog ? 'active' : ''} to={`${process.env.PUBLIC_URL}/blog`}> Blog </Link>
       </li>
     </ul>
   </div>
