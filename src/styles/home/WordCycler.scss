@@ -1,0 +1,50 @@
+.wordsContainer {
+    display: inline-block;
+    height: 1em;
+    perspective: 300px;
+    position: relative;
+}
+
+._word {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hiddenWord {
+    @extend ._word;
+
+    animation: zoom-out 0.6s;
+    opacity: 0;
+}
+
+.visibleWord {
+    @extend ._word;
+
+    animation: zoom-in 0.6s;
+    opacity: 1;
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: translateZ(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes zoom-out {
+    0% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateZ(-30px);
+    }
+}
