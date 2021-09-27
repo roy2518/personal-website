@@ -2,7 +2,10 @@
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
-    margin: 50px 0 70px;
+    margin: 25px 0 35px;
+    @media screen and (min-width: 992px) {
+        margin: 50px 0 70px;
+    }
 
     a {
         color: white;
