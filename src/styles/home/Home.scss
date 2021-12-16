@@ -9,38 +9,6 @@ h1 {
     margin: 24px 0;
 }
 
-h2 {
-    font-size: 2.25em;
-    font-weight: 300;
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-.descriptor {
-    color: #66fcf1;
-    font-size: 4em;
-}
-
-.firstSection {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    position: relative;
-    z-index: 10;
-}
-
-.about {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 16px;
-}
-
 .secondSection {
     box-sizing: border-box;
     clear: both;
