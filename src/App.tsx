@@ -1,5 +1,4 @@
 import React from 'react';
-import Plx from 'react-plx';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -20,21 +19,7 @@ function App(): JSX.Element {
           <Blog />
         </Route>
         <Route path="/">
-          <Plx
-            parallaxData={[{
-              start: '100vh',
-              duration: '50vh',
-              properties: [
-                {
-                  startValue: '#e3e4e0',
-                  endValue: 'rgba(199, 199, 187, 0.4)',
-                  property: 'backgroundColor',
-                },
-              ],
-            }]}
-          >
-            <Home />
-          </Plx>
+          <Home />
         </Route>
       </Switch>
     </Router>

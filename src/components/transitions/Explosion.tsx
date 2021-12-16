@@ -30,8 +30,8 @@ for (let i = 0; i < ROWS; i += 1) {
           property: 'opacity',
         },
         {
-          startValue: '#c7c7bb',
-          endValue: '#e3e4e0',
+          startValue: '#66fcf1',
+          endValue: '#0b0c10',
           property: 'backgroundColor',
         },
         {
