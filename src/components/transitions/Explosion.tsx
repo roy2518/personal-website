@@ -3,7 +3,7 @@ import Plx from 'react-plx';
 
 import styles from 'styles/transitions/Explosion.module.scss';
 
-const ROWS = 8;
+const ROWS = 6;
 const NUM_BOXES_PER_ROW = 8;
 const BOXES: ParallaxDataType[][] = [];
 
@@ -31,7 +31,7 @@ for (let i = 0; i < ROWS; i += 1) {
         },
         {
           startValue: '#0c2431',
-          endValue: '#e1dad2',
+          endValue: '#194a50',
           property: 'backgroundColor',
         },
         {

@@ -1,12 +1,5 @@
 .explosion-box {
     float: left;
-    height: 12.5vh;
+    height: calc(50vh / 6);
     width: 12.5vw;
-}
-
-.explosion-container {
-    left: 0;
-    position: absolute;
-    top: 0;
-    z-index: -1;
 }

@@ -14,23 +14,25 @@ const Home = (): JSX.Element => (
   <div>
     <Plx
       parallaxData={
-        [{
-          start: 'self',
-          duration: '50vh',
-          properties: [
-            {
-              startValue: 1,
-              endValue: 0,
-              property: 'opacity',
-            },
-          ],
-        }]
+        [
+          {
+            start: 'self',
+            duration: '50vh',
+            properties: [
+              {
+                startValue: 1,
+                endValue: 0,
+                property: 'opacity',
+              },
+            ],
+          },
+        ]
       }
     >
       <div className="firstSection">
         <Header page={Page.Home} />
         <div className="about">
-          <h1>Hi there! I&apos;m Roy, a</h1>
+          <h2>Hi there! I&apos;m Roy, a</h2>
           <div className="descriptor">
             <WordCycler words={['student', 'developer', 'musician']} />
           </div>
@@ -54,15 +56,22 @@ const Home = (): JSX.Element => (
             property: 'opacity',
           },
           {
-            startValue: 50,
+            startValue: -30,
             endValue: 0,
             unit: 'vh',
             property: 'translateY',
           },
+          {
+            startValue: 1,
+            endValue: 1.5,
+            property: 'scale',
+          },
           ],
         }]}
       >
-        <h1>Experience</h1>
+        <div className="sectionHeading">
+          <h2>Experience</h2>
+        </div>
       </Plx>
     </div>
   </div>

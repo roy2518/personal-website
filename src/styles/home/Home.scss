@@ -1,4 +1,4 @@
-h1 {
+h2 {
     font-size: 2.25em;
     font-weight: 600;
     margin: 0;
@@ -28,7 +28,12 @@ p {
 
 .secondSection {
     box-sizing: border-box;
+    clear: both;
     height: 100vh;
     margin: 0 64px;
-    padding-top: 32px;
+    padding-top: 48px;
+}
+
+.sectionHeading {
+    text-align: center;
 }
