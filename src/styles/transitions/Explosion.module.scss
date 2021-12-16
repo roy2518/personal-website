@@ -1,6 +1,12 @@
 .explosion-box {
-    // background-color: #13042b;
     float: left;
     height: 12.5vh;
     width: 12.5vw;
+}
+
+.explosion-container {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }

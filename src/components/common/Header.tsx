@@ -16,10 +16,10 @@ const Header = ({ page }: HeaderProps): JSX.Element => (
         <Link className={page === Page.Home ? 'active' : ''} to="/"> Home </Link>
       </li>
       <li>
-        <Link className={page === Page.Projects ? 'active' : ''} to="/projects"> Projects </Link>
+        <Link className={page === Page.Projects ? 'active' : ''} to="/projects"> Experience </Link>
       </li>
       <li>
-        <Link className={page === Page.Blog ? 'active' : ''} to="/blog"> Blog </Link>
+        <Link className={page === Page.Blog ? 'active' : ''} to="/blog"> Projects </Link>
       </li>
     </ul>
   </div>
