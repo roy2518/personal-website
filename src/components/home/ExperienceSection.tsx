@@ -1,6 +1,8 @@
 import React from 'react';
 import Plx from 'react-plx';
 
+import ScrollArrow from 'components/common/ScrollArrow';
+
 import styles from 'styles/home/ExperienceSection.module.scss';
 
 const ExperienceSection = (): JSX.Element => (
@@ -20,7 +22,17 @@ const ExperienceSection = (): JSX.Element => (
           unit: 'vh',
           property: 'translateY',
         }],
-      }]}
+      },
+      {
+        start: '#scrollArrow',
+        duration: '100vh',
+        properties: [{
+          startValue: 1,
+          endValue: 0,
+          property: 'opacity',
+        }],
+      },
+      ]}
     >
       <div className={styles.sectionHeading}>
         <h2>Experience</h2>
@@ -118,6 +130,9 @@ const ExperienceSection = (): JSX.Element => (
             </li>
           </ul>
         </div>
+      </div>
+      <div className={styles.scrollArrow} id="scrollArrow">
+        <ScrollArrow />
       </div>
     </Plx>
   </div>

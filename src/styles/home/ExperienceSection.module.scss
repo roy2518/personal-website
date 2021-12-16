@@ -20,8 +20,8 @@
 .container {
     box-sizing: border-box;
     clear: both;
-    height: 100vh;
     margin: 0 16px;
+    min-height: 100vh;
     padding-top: 48px;
 
     h2 {
@@ -48,4 +48,10 @@
     margin-right: auto;
     max-width: 70vw;
     text-align: left;
+}
+
+.scrollArrow {
+    align-items: center;
+    display: flex;
+    margin: 48px 0 40px;
 }
