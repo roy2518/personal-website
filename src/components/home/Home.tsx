@@ -70,7 +70,7 @@ const Home = (): JSX.Element => (
         }]}
       >
         <div className="sectionHeading">
-          <h2>Experience</h2>
+          <h1>Experience</h1>
         </div>
       </Plx>
     </div>
