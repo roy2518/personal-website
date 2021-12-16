@@ -30,7 +30,7 @@ const Home = (): JSX.Element => (
       }
     >
       <div className="firstSection">
-        <Header page={Page.Home} />
+        <Header page={Page.About} />
         <div className="about">
           <h2>Hi there! I&apos;m Roy, a</h2>
           <div className="descriptor">

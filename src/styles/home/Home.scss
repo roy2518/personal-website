@@ -20,7 +20,7 @@ p {
 }
 
 .descriptor {
-    color: #7f867b;
+    color: #66fcf1;
     font-size: 4em;
 }
 
@@ -28,13 +28,17 @@ p {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin: 0 64px;
     position: relative;
     z-index: 10;
 }
 
 .about {
+    align-items: center;
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 16px;
 }
 
 .secondSection {

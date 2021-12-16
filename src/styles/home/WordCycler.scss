@@ -6,9 +6,11 @@
 }
 
 ._word {
+    left: -25vw;
     position: absolute;
-    left: 0;
+    text-align: center;
     top: 0;
+    width: 50vw;
 }
 
 .hiddenWord {
