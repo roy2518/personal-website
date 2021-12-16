@@ -1,0 +1,16 @@
+.scroll-down {
+    margin: 0 auto 40px;
+    animation-name: bounce;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform:translateY(0px);
+    }
+    to {
+      transform:translateY(10px);
+    }
+  }

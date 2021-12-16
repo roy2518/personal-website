@@ -2,6 +2,7 @@ import React from 'react';
 import Plx from 'react-plx';
 
 import Header from 'components/common/Header';
+import ScrollArrow from 'components/common/ScrollArrow';
 import WordCycler from 'components/home/WordCycler';
 import Explosion from 'components/transitions/Explosion';
 
@@ -28,7 +29,7 @@ const Home = (): JSX.Element => (
     >
       <div className="firstSection">
         <Header page={Page.Home} />
-        <div>
+        <div className="about">
           <h1>Hi there! I&apos;m Roy, a</h1>
           <div className="descriptor">
             <WordCycler words={['student', 'developer', 'musician']} />
@@ -36,10 +37,13 @@ const Home = (): JSX.Element => (
           <p>currently attending Duke University.</p>
           <p>I&apos;ll be graduating in Spring 2022 with a B.S. in Computer Science!</p>
         </div>
+        <ScrollArrow />
       </div>
     </Plx>
     <Explosion />
-    <div className="secondSection">
+    <div
+      className="secondSection"
+    >
       <Plx
         parallaxData={[{
           start: 'self',

@@ -18,7 +18,12 @@ p {
     flex-direction: column;
     height: 100vh;
     margin: 0 64px;
+    position: relative;
     z-index: 10;
+}
+
+.about {
+    flex: 1;
 }
 
 .secondSection {
