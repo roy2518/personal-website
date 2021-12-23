@@ -12,6 +12,13 @@
     }
 }
 
+.projectDescription {
+    & > a {
+        color: #45a29e;
+        text-decoration: none;
+    }
+}
+
 .sectionHeading {
     color: #66fcf1;
     text-align: center;

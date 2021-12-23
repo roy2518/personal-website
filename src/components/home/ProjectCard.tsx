@@ -1,10 +1,12 @@
 import React from 'react';
 
+import GithubLogo from 'assets/GithubLogo.png';
+
 import styles from 'styles/home/ProjectCard.module.scss';
 
 interface ProjectCardProps {
-    description: string,
-    githubLink?: string,
+    description: React.ReactNode,
+    githubLink: string,
     imageSrc: string,
     liveLink: string,
     skills: string[],
@@ -25,6 +27,17 @@ const ProjectCard = ({
         <div className={styles.cardTitle}>
           {title}
         </div>
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            alt={`Github link for ${title}`}
+            className={styles.githubIcon}
+            src={GithubLogo}
+          />
+        </a>
         <div>
           {description}
         </div>

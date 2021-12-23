@@ -29,10 +29,40 @@ const ProjectsSection = (): JSX.Element => (
       <div className={styles.sectionHeading}>
         <h2>Projects</h2>
         <ProjectCard
-          description="Plots tweets containing a given hashtag on a map based on the location of the tweet's author.
-            Uses Twitter API v2 to fetch recent tweets, MapQuest to perform address geocoding, and MapBox
-            for map visualization."
+          description={(
+            <span
+              className={styles.projectDescription}
+            >
+              Tweet Visualizer plots tweets on a map, based on
+              the author&apos;s location. It fetches tweets using
+              <a
+                href="https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {' Twitter API v2 '}
+              </a>
+              , uses
+              <a
+                href="https://developer.mapquest.com/documentation/geocoding-api/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                { ' MapQuest ' }
+              </a>
+              to perform address geocoding, and
+              <a
+                href="https://www.mapbox.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                { ' MapBox ' }
+              </a>
+              for map visualization.
+            </span>
+          )}
           imageSrc={DisplayTweetsScreenshot}
+          githubLink="https://github.com/roy2518/display-tweets-frontend"
           liveLink="https://roy2518.github.io/display-tweets-frontend/"
           skills={['React', 'Typescript', 'Node.js']}
           title="Tweet Visualizer"
