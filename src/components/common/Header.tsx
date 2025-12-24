@@ -1,25 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import styles from 'styles/common/Header.module.scss';
 
-import { Page } from 'utils/types';
-
-interface HeaderProps {
-  page: Page;
-}
-
-const Header = ({ page }: HeaderProps): JSX.Element => (
+const Header = (): JSX.Element => (
   <div className={styles.header}>
     <ul>
       <li>
-        <Link className={page === Page.About ? styles.active : ''} to="/"> About </Link>
+        <span> About </span>
       </li>
       <li>
-        <Link className={page === Page.Resume ? styles.active : ''} to="/projects"> Resume </Link>
+        <span> Experience </span>
       </li>
       <li>
-        <Link className={page === Page.Contact ? styles.active : ''} to="/blog"> Contact </Link>
+        <span> Contact </span>
       </li>
     </ul>
   </div>

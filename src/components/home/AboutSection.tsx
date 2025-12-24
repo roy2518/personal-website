@@ -7,8 +7,6 @@ import WordCycler from 'components/home/WordCycler';
 
 import styles from 'styles/home/AboutSection.module.scss';
 
-import { Page } from 'utils/types';
-
 const AboutSection = (): JSX.Element => (
   <div>
     <Plx
@@ -29,7 +27,6 @@ const AboutSection = (): JSX.Element => (
       }
     >
       <div className={styles.container}>
-        <Header page={Page.About} />
         <div className={styles.aboutText}>
           <h2>Hi there! I&apos;m Roy, a</h2>
           <div className={styles.descriptor}>

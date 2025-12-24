@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { ReactHTMLElement, createRef } from 'react';
 
+import Header from 'components/common/Header';
 import AboutSection from 'components/home/AboutSection';
 import ExperienceSection from 'components/home/ExperienceSection';
 import ProjectsSection from 'components/home/ProjectsSection';
@@ -7,10 +8,17 @@ import Explosion from 'components/transitions/Explosion';
 
 const Home = (): JSX.Element => (
   <div>
-    <AboutSection />
+    <Header />
+    <div>
+      <AboutSection />
+    </div>
     <Explosion />
-    <ExperienceSection />
-    <ProjectsSection />
+    <div>
+      <ExperienceSection />
+    </div>
+    <div>
+      <ProjectsSection />
+    </div>
   </div>
 );
 

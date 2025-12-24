@@ -4,17 +4,14 @@
     justify-content: flex-end;
     margin: 0 16px;
 
-    a {
+    span {
         color: #c5c6c7;
         text-decoration: none;
 
         &:hover {
-            border-bottom: 2px solid rgba(69, 162, 158, 0.25);
+            border-bottom: 2px solid #45a29e;
+            cursor: pointer;
         }
-    }
-
-    a.active {
-        border-bottom: 2px solid #45a29e;
     }
 
     li {
