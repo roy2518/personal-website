@@ -1,28 +1,32 @@
 .header {
     display: flex;
     flex-flow: row;
+    font-size: 20px;
     justify-content: flex-end;
     margin: 0 16px;
+}
 
-    span {
-        color: #c5c6c7;
-        text-decoration: none;
+.headerLink {
+    border-bottom: 2px solid transparent;
+    color: #c5c6c7;
+    float: left;
+    list-style-type: none;
+    margin-left: 10px;
 
-        &:hover {
-            border-bottom: 2px solid #45a29e;
-            cursor: pointer;
-        }
+    @media screen and (min-width: 576px) {
+        margin-left: 20px;
+    }
+    @media screen and (min-width: 992px) {
+        margin-left: 30px;
     }
 
-    li {
-        float: left;
-        list-style-type: none;
-        margin-left: 10px;
-        @media screen and (min-width: 576px) {
-            margin-left: 20px;
-        }
-        @media screen and (min-width: 992px) {
-            margin-left: 30px;
-        }
+    &:hover {
+        border-bottom: 2px solid #c5c6c7;
+        cursor: pointer;
     }
+}
+
+.headerLinkActive {
+    composes: headerLink;
+    border-bottom: 2px solid #c5c6c7;
 }

@@ -1,19 +1,25 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import styles from 'styles/common/Header.module.scss';
 
 const Header = (): JSX.Element => (
   <div className={styles.header}>
     <ul>
-      <li>
-        <span> About </span>
-      </li>
-      <li>
-        <span> Experience </span>
-      </li>
-      <li>
-        <span> Contact </span>
-      </li>
+      <NavLink
+        exact
+        activeClassName={styles.headerLinkActive}
+        className={styles.headerLink}
+        to="/"
+      >
+        About
+      </NavLink>
+      <NavLink
+        activeClassName={styles.headerLinkActive}
+        className={styles.headerLink}
+        to="/experience"
+      >
+        Experience
+      </NavLink>
     </ul>
   </div>
 );

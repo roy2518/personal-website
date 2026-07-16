@@ -1,31 +1,32 @@
-.aboutText {
-    align-items: center;
+.aboutSection {
     display: flex;
-    flex: 1;
-    flex-direction: column;
+    flex-direction: row;
+    font-size: 20px;
     justify-content: center;
-    padding: 0 16px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    position: relative;
-    z-index: 10;
-
-    h2 {
-        font-size: 64px;
-        font-weight: 300;
-        margin: 0;
-    }
-    
-    p {
-        margin: 0;
-    }
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 12px;
 }
 
-.descriptor {
-    color: #66fcf1;
-    font-size: 128px;
+.headshot {
+    border-radius: 6px;
+    margin-left: 24px;
+    max-height: 50vh;
+    max-width: 50vh;
+}
+
+.icon {
+    height: 25px;
+    margin-right: 12px;
+    margin-top: 6px;
+}
+
+.name {
+    color: #dde0e2;
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0;
 }
