@@ -9,6 +9,13 @@ const AboutSection = (): JSX.Element => (
   <div className={styles.container}>
     <div className={styles.aboutSection}>
       <div>
+        <img
+          alt="Roy's Headshot"
+          className={styles.headshot}
+          src={headshot}
+        />
+      </div>
+      <div>
         <span>Hi! I&apos;m</span>
         <h2 className={styles.name}>Roy Xiong</h2>
         <p>
@@ -20,13 +27,6 @@ const AboutSection = (): JSX.Element => (
           In my free time, I like playing piano, basketball, tennis, and cooking. I am
           always on the lookout for new delicious recipes!
         </p>
-      </div>
-      <div>
-        <img
-          alt="Roy's Headshot"
-          className={styles.headshot}
-          src={headshot}
-        />
       </div>
     </div>
     <div
