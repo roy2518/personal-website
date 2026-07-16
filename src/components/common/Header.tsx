@@ -9,14 +9,14 @@ const Header = (): JSX.Element => (
         exact
         activeClassName={styles.headerLinkActive}
         className={styles.headerLink}
-        to="/"
+        to="/personal-website/"
       >
         About
       </NavLink>
       <NavLink
         activeClassName={styles.headerLinkActive}
         className={styles.headerLink}
-        to="/experience"
+        to="/personal-website/experience"
       >
         Experience
       </NavLink>

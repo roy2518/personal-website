@@ -11,10 +11,10 @@ function App(): JSX.Element {
     <Router>
       <Layout>
         <Switch>
-          <Route path="/experience">
+          <Route path="/personal-website/experience">
             <Experience />
           </Route>
-          <Route path="/">
+          <Route path="/personal-website/">
             <AboutSection />
           </Route>
         </Switch>
